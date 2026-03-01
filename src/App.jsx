@@ -1,10 +1,16 @@
 import { useState } from 'react'
+import Navbar from './components/Navbar'
 
 function App() {
 
+  const [isOpen, setIsOpen] = useState(false)
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <>
-      <h1 className='text-green-700 text-2xl font-bold'>BrickBloom</h1>
+      <Navbar />
     </>
   )
 }
