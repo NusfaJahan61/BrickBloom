@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className='flex justify-between items-center p-4 bg-gray-800 text-white'>
       <img src='./src/assets/logo.png' alt="Logo" className="h-20 w-20" />
-      <div className="md:hidden">
+      <div className={` md:hidden ${!isOpen ? 'block' : 'hidden'}`}>
         <button onClick={() => toggleMenu()} className="text-gray-500 focus:outline-none">
           <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
