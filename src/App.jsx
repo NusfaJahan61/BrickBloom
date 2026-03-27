@@ -1,17 +1,11 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 
 function App() {
 
-  const [isOpen, setIsOpen] = useState(false)
-  const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
-
   return (
-    <>
+    <main className='overflow-x-hidden antialiased text-neutral-800  '>
       <Navbar />
-    </>
+    </main>
   )
 }
 

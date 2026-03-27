@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { LINKS } from '../constants'
+import logo from '../assets/logo.webp'
 
 const Navbar = () => {
 
@@ -9,20 +11,32 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='flex justify-between items-center p-4 bg-gray-800 text-white'>
-      <img src='./src/assets/logo.png' alt="Logo" className="h-20 w-20" />
-      <div className={` md:hidden ${!isOpen ? 'block' : 'hidden'}`}>
-        <button onClick={() => toggleMenu()} className="text-gray-500 focus:outline-none">
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+    <nav className='border-b-2 border-neutral-100'>
+      <div className='max-w-7xl mx-auto flex justify-between items-center py-8'>
+        <div className='pl-2'>
+          <a href="#">
+            <img src={logo} width={150} height={15} alt="Logo" />
+          </a>
+        </div>
+        <div className='md:hidden'>
+          <button onClick={toggleMenu} className="text-2xl pr-2 focus:outline-none" aria-label={isOpen ? "Close menu" : "Open menu"} >
+            {isOpen ? '✖' : '☰'}
+          </button>
+        </div>
+        <div className='hidden md:flex space-x-8 md:space-x-4 pr-2 '>
+          {LINKS.map((link, index) => (
+            <a key={index} href={link.link} className='text-sm uppercase font-medium'>
+              {link.name}
+            </a>
+          ))}
+        </div>
       </div>
-      <div className={`${isOpen ? 'block flex-col bg-gray-700 border border-gray-600 ' : 'hidden '} md:flex md:items-center md:space-x-6 `}>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Contact</a>
+      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden absolute bg-neutral-50 w-full py-5 px-4 mt-2 border-b-4 `}>
+        {LINKS.map((link, index) => (
+          <a key={index} href={link.link} className='uppercase font-medium text-lg block py-2 tracking-wide'>
+            {link.name}
+          </a>
+        ))}
       </div>
     </nav>
   )
