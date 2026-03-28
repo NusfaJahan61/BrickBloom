@@ -32,9 +32,9 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden absolute bg-neutral-50 w-full py-5 px-4 mt-2 border-b-4 `}>
+      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden absolute bg-neutral-50 w-full py-5 px-4 mt-2 border-b-4 border-neutral-300`}>
         {LINKS.map((link, index) => (
-          <a key={index} href={link.link} className='uppercase font-medium text-lg block py-2 tracking-wide'>
+          <a key={index} href={link.link} className='uppercase font-medium text-lg block py-2 tracking-wide hover:text-neutral-600'>
             {link.name}
           </a>
         ))}
