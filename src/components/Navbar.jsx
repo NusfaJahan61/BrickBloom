@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex space-x-8 md:space-x-4 pr-2 '>
           {LINKS.map((link, index) => (
-            <a key={index} href={link.link} className='text-sm uppercase font-medium'>
+            <a key={index} href={link.link} className='text-sm uppercase font-medium hover:text-neutral-600 transition duration-300' >
               {link.name}
             </a>
           ))}
