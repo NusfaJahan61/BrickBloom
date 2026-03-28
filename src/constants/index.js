@@ -50,21 +50,21 @@ export const SERVICES_CONTENT = [
   {
     title: "Kitchen Renovation",
     description:
-      "Transform your kitchen into a modern, functional space with our comprehensive renovation services. From custom cabinetry to state-of-the-art appliances, we handle all aspects of kitchen remodeling.",
+      "Transform your kitchen into a modern, functional space with our comprehensive renovation services. From custom cabinetry to state-of-the-art appliances, we handle all aspects of kitchen remodeling. Our team of experts will work closely with you to design and execute a kitchen that meets your needs and exceeds your expectations. Whether you're looking for a sleek, contemporary design or a warm, traditional look, we have the expertise to bring your vision to life. Let us help you create the kitchen of your dreams, where style meets functionality and every detail is crafted to perfection. Contact us today to start your kitchen renovation journey and experience the difference of working with BrickBloom.  We look forward to helping you create a space that you'll love for years to come.Your dream kitchen is just a renovation away!",
     image: kitchenImage,
     alt: "Kitchen Renovation",
   },
   {
     title: "Bathroom Renovation",
     description:
-      "Create a spa-like retreat in your home with our bathroom renovation services. We offer luxurious fixtures, custom tiling, and innovative designs to elevate your bathroom experience.",
+      "Create a spa-like retreat in your home with our bathroom renovation services. We offer luxurious fixtures, custom tiling, and innovative designs to elevate your bathroom experience. Our team of skilled professionals will work with you to design a bathroom that combines style and functionality, ensuring that every detail is tailored to your preferences. Whether you're looking for a modern, minimalist design or a classic, elegant look, we have the expertise to bring your vision to life. From concept to completion, we handle every aspect of the renovation process, ensuring a seamless and stress-free experience. Let us help you transform your bathroom into a sanctuary where you can relax and unwind. Your dream bathroom is just a renovation away! Contact us today to start your bathroom renovation journey and discover the difference of working with BrickBloom. ",
     image: bathroomImage,
     alt: "Bathroom Renovation",
   },
   {
     title: "Living Room Renovation",
     description:
-      "Update your living room with our expert renovation services. We offer custom designs, new flooring options, and stylish lighting solutions to create a warm and inviting space for your family and guests.",
+      "Update your living room with our expert renovation services. We offer custom designs, new flooring options, and stylish lighting solutions to create a warm and inviting space for your family and guests. Our team of experienced professionals will work closely with you to design a living room that reflects your style and meets your needs. Whether you're looking for a modern, minimalist design or a cozy, traditional look, we have the expertise to bring your vision to life. From concept to completion, we handle every aspect of the renovation process, ensuring a seamless and stress-free experience. Let us help you transform your living room into a space where memories are made and cherished. Contact us today to start your living room renovation journey and experience the difference of working with BrickBloom. We look forward to helping you create a space that you'll love for years to come.",
     image: livingRoomImage,
     alt: "Living Room Renovation",
   },

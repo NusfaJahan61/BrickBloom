@@ -15,7 +15,8 @@ const Navbar = () => {
       <div className='max-w-7xl mx-auto flex justify-between items-center py-8'>
         <div className='pl-2'>
           <a href="#">
-            <img src={logo} width={150} height={15} alt="Logo" />
+            <h1 className='text-2xl uppercase tracking-wide font-extrabold'>Brickbloom</h1>
+            {/* <img src={logo} width={150} height={15} alt="Logo" /> */}
           </a>
         </div>
         <div className='md:hidden'>
