@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <section className="max-w-7xl mx-auto border-b-2 border-neutral-100" id="services">
       <div className="my-20">
-        <h1 className="text-xl lg:text-3xl xl:text-5xl font-bold tracking-tight text-center mb-20 uppercase">Our Home Renovation Services</h1>
+        <h1 className="text-xl lg:text-3xl xl:text-5xl font-bold tracking-wide text-center mb-20 uppercase">Our Home Renovation Services</h1>
         {SERVICES_CONTENT.map((services, index) => (
           <div className="mb-12 mx-4 flex flex-col lg:flex-row" key={index}>
             <div className={`lg:w-1/2 mb-4 lg:mb-0 ${index % 2 === 0 ? '' : 'lg:order-2'}`}>
