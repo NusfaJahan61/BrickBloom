@@ -11,7 +11,7 @@ const Services = () => {
               <img src={services.image} alt={services.title} className='w-full h-auto object-cover rounded-lg' /></div>
             <div className={`lg:w-1/2 flex flex-col ${index % 2 === 0 ? 'lg:pl-12' : 'lg:pr-12'}`}>
               <h3 className="text-xl lg:text-2xl font-medium mb-2 tracking-wide">{services.title}</h3>
-              <p className="mb-4 text-[16px] lg:text-lg lg:leading-9">{services.description}</p>
+              <p className="mb-4 text-lg lg:text-lg lg:leading-9">{services.description}</p>
             </div>
           </div>
         ))}
